@@ -4,34 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module1</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-bar">
         <img src="assets/logos/circle.svg" class="logo" />
         <ul>
           <li>Home</li>
           <li>Projects</li>
           <li>Services</li>
         </ul>
-        <a class="" href="pages/contact.html">Contact Us</a>
+        <a class="btn btn-primary" href="pages/contact.html">Contact Us</a>
       </nav>
     </header>
     <main>
-      <section id="banner-hero">
+      <section id="banner-hero" class="container">
         <div class="d-left">
-          <h3>Empower Your Business With Stunning Design!</h3>
-          <p>
-            Circle is a digital design and development studio. We design and
-            develop astonishing websites and mobile apps.
-          </p>
-          <a class="btn" href="#">Get in touch</a>
-          <a href="">See our work</a>
+          <h1>Empower Your Business With Stunning Design!</h1>
+          <div class="text-regular mb-4">
+            <p>Circle is a digital design and development studio.</p>
+            <p>We design and develop astonishing websites and mobile apps.</p>
+          </div>
+          <a class="btn btn-primary" href="#">Get in touch</a>
+          <a href="" class="ml-4">See our work</a>
         </div>
         <div class="d-right">
           <img class="cardImg" src="./assets/hero-section/card-1.png" />
           <img class="cardOk" src="./assets/hero-section/card-2.png" />
-          <img class="cardImg" src="./assets/hero-section/hero-image.png" />
+          <img class="cardBG" src="./assets/hero-section/hero-image.png" />
         </div>
       </section>
       <section id="customers">
@@ -40,16 +41,16 @@
             <img src="./assets/logos/airbnb-logo.svg" />
           </div>
           <div class="logo-customer">
-            <img src="./assets/logos/airbnb-logo.svg" />
+            <img src="./assets/logos/amazon-logo.svg" />
           </div>
           <div class="logo-customer">
-            <img src="./assets/logos/airbnb-logo.svg" />
+            <img src="./assets/logos/fedex-logo.svg" />
           </div>
           <div class="logo-customer">
-            <img src="./assets/logos/airbnb-logo.svg" />
+            <img src="./assets/logos/google-logo.svg" />
           </div>
           <div class="logo-customer">
-            <img src="./assets/logos/airbnb-logo.svg" />
+            <img src="./assets/logos/microsoft-logo.svg" />
           </div>
         </div>
       </section>
@@ -164,5 +165,6 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script src="./js/components/projects.js"></script>
   </body>
 </html>

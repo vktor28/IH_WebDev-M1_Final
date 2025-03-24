@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap");
+
+:root {
+  --color-primary-default: #072ac8;
+  --color-primary-accent: #43d2ff;
+  --color-primary-hover: #a2d6f9;
+  --color-primary-tapped: #d1edff;
+  --color-neutral-dark: #292e47;
+  --color-neutral-medium: #6b708d;
+  --color-neutral-light: #f2f4fc;
+  --color-neutral-light-blue: #ecf7ff;
+  --color-yellow: #ffc600;
+}
+*,
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+body {
+  font-family: "Roboto", "Open Sans";
+  color: var(--color-neutral-medium);
+  background-color: var(--color-neutral-light);
+}
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--color-neutral-dark);
+}
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.text-medium {
+  font-size: 24px;
+  font-weight: 500;
+}
+.text-regular {
+  font-size: 20px;
+  font-weight: 400;
+}
+.headline-regular {
+  font-size: 17px;
+  font-weight: 400;
+}
+.headline-medium {
+  font-size: 17px;
+  font-weight: 500;
+}
+.caption-1 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.caption-2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  align-content: center;
+  font-weight: 500;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0;
+}
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+}
+.nav-bar a {
+  margin: 0;
+}
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0px 15px;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 15px 30px;
+  border: 0px;
+}
+.btn-primary {
+  background-color: var(--color-primary-default);
+  color: white;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+  }
+.mt-4 {
+  margin-top: 4rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.ml-4 {
+  margin-left: 2rem;
+}
+#banner-hero {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+.d-right {
+  max-width: 50%;
+  position: relative;
+}
+.d-left {
+  max-width: 50%;
+}
+.cardBG {
+  width: 100%;
+}
+.cardImg {
+  width: 60%;
+  left: -15%;
+  top: -2%;
+  position: absolute;
+}
+.cardOk {
+  width: 60%;
+  right: -14%;
+  bottom: -20%;
+  position: absolute;
+}
+#customers {
+  margin: 150px 0;
+}
+#customers .container {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+.logo-customer {
+  filter: grayscale(1);
+}
