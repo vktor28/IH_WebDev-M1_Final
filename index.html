@@ -20,7 +20,7 @@
     </header>
     <main>
       <section id="banner-hero" class="container">
-        <div class="d-left">
+        <div class="d-left mb-4">
           <h1>Empower Your Business With Stunning Design!</h1>
           <div class="text-regular mb-4">
             <p>Circle is a digital design and development studio.</p>
@@ -29,7 +29,7 @@
           <a class="btn btn-primary" href="#">Get in touch</a>
           <a href="" class="ml-4">See our work</a>
         </div>
-        <div class="d-right">
+        <div class="d-right mb-4">
           <img class="projectCard" src="./assets/hero-section/card-1.png" />
           <img class="projectAccepted" src="./assets/hero-section/card-2.png" />
           <img class="heroBG" src="./assets/hero-section/hero-image.png" />
@@ -54,16 +54,16 @@
           </div>
         </div>
       </section>
-      <section id="projects" class="mt-4">
-        <div class="content">
-          <h4>Recent Projects</h4>
+      <section id="projects" class="mt-12">
+        <div class="container">
+          <h3>Recent Projects</h3>
           <div class="cards mt-4"></div>
         </div>
       </section>
       <section id="testimonials" class="mt-4">
-        <div class="content">
+        <div class="container">
           <div class="comment">
-            <h4>Hear What Our Clients Have to Say</h4>
+            <h3>Hear What Our Clients Have to Say</h3>
             <p>
               “Circle helped us through every stage of our startup. We really
               enjoyed working with you.”
@@ -85,59 +85,84 @@
         </div>
       </section>
       <section id="services" class="mt-4">
-        <div class="content">
+        <div class="container">
           <div class="cards">
-            <div class="card">
+            <div class="card mb-2">
               <div class="cardBody">
-                <img class="icon" src="./assets/services-section/icons/1.svg" />
-                <h6>Vectorify</h6>
-                <p>User experience design</p>
+                <div class="icon-card mb-2">
+                  <img
+                    class="icon"
+                    src="./assets/services-section/icons/1.svg"
+                  />
+                </div>
+                <h6 class="text-medium mb-1">Vectorify</h6>
+                <p class="headline-regular mb-4">User experience design</p>
                 <a href="#">Learn more</a>
               </div>
+            </div>
+            <div class="card mb-2">
               <div class="cardBody">
-                <img class="icon" src="./assets/services-section/icons/2.svg" />
-                <h6>Vectorify</h6>
-                <p>User experience design</p>
+                <div class="icon-card mb-2">
+                  <img
+                    class="icon"
+                    src="./assets/services-section/icons/2.svg"
+                  />
+                </div>
+                <h6 class="text-medium mb-1">Vectorify</h6>
+                <p class="headline-regular mb-4">User experience design</p>
                 <a href="#">Learn more</a>
               </div>
+            </div>
+            <div class="card mb-2">
               <div class="cardBody">
-                <img class="icon" src="./assets/services-section/icons/3.svg" />
-                <h6>Vectorify</h6>
-                <p>User experience design</p>
+                <div class="icon-card mb-2">
+                  <img
+                    class="icon"
+                    src="./assets/services-section/icons/3.svg"
+                  />
+                </div>
+                <h6 class="text-medium mb-1">Vectorify</h6>
+                <p class="headline-regular mb-4">User experience design</p>
                 <a href="#">Learn more</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="newsletter">
-        <div class="content">
-          <h4>Do you have any questions?</h4>
-          <p>Let us help you!</p>
+      <section id="newsletter" class="container mt-4">
+        <div class="container pt-8 pb-8">
+          <h3 class="mb-2">Do you have any questions?</h3>
+          <p class="text-regular mb-2">Let us help you!</p>
           <form>
-            <input
-              name="email"
-              type="email"
-              placeholder="Enter your email"
-              required
-            />
-            <button type="submit">Subscribe</button>
+            <div class="fieldNewsletter">
+                <img class="emailIcon" src="./assets/newsletter/icon/mail.svg">
+              <input
+                class="headline-regular"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="company">
-        <img src="./assets/logos/circle.svg" />
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      </div>
-      <div class="links">
-        <a href="#">Team</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Press</a>
-        <a href="#">Projects</a>
-        <a href="#">Privacy Policy</a>
+    <footer class="mt-4">
+      <div class="container">
+        <div class="company">
+          <img src="./assets/logos/circle.svg" />
+          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div class="links">
+          <a href="#">Team</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Press</a>
+          <a href="#">Projects</a>
+          <a href="#">Privacy Policy</a>
+        </div>
       </div>
     </footer>
     <script src="./js/components/projects.js"></script>
