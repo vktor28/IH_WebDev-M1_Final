@@ -14,7 +14,7 @@
 *,
 html,
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: 0;
@@ -189,7 +189,8 @@ a {
 #customers .container {
   display: flex;
   align-items: center;
-  align-content: space-between;
+  align-content: space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
@@ -237,24 +238,97 @@ a {
   width: 40px;
   height: 40px;
 }
+#testimonials {
+  background-color: var(--color-neutral-dark);
+}
+#testimonials h3 {
+  color: var(--color-neutral-light);
+}
+#testimonials .comment {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+#testimonials .author {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.textAuthor {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.textAuthor .name {color: var(--color-primary-hover);}
+.textAuthor .company {color: var(--color-neutral-light);}
+#testimonials p {
+  color: var(--color-yellow);
+  max-width: 480px;
+  text-align: center;
+}
+#testimonials .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("../assets/testimonial-section/orbit.png");
+  background-size: cover;
+  background-position: center;
+}
+.imgAuthor {
+  height: 60px;
+  width: 60px;
+  background-image: url("../assets/testimonial-section/profile.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+}
+
 #newsletter {
   background-color: var(--color-yellow);
   text-align: center;
   color: var(--color-neutral-dark);
 }
 
-input {
-  padding: 15px 50px;
-  width: 300px;
+#newsletter form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
+
 .fieldNewsletter {
   position: relative;
-  max-width: 300px;
+}
+input.newsletter {
+  padding: 1.8rem 66px;
+  width: 350px;
+  color: var(--color-neutral-dark);
+}
+input.newsletter::placeholder {
+  color: var(--color-neutral-dark);
+}
+#newsletter form button {
+  padding: 1.8rem 50px;
 }
 .emailIcon {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 25px;
+  top: 25px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.company {
+  max-width: 270px;
 }
 @media (max-width: 479px) {
   .d-right {
