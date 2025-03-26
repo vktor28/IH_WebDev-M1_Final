@@ -13,4 +13,4 @@ document.querySelector("header").innerHTML = `
           <li><a href="/#services">Services</li>
         </ul>
       </nav>
-      <a class="btn btn-primary" href="/pages/contact.html">Contact Us</a>`;
+      <a class="btn btn-primary contactbtn" href="/pages/contact.html">Contact Us</a>`;

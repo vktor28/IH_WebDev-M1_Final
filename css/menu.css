@@ -50,6 +50,7 @@
 }
 
 @media (max-width: 760px) {
+  .nav-bar a {color: var(--color-neutral-light);}
   .nav-toggle-label {
     display: block;
     margin-left: auto; /* empuja el menú hamburguesa a la derecha */
@@ -97,7 +98,7 @@
     display: inline-block;
     text-align: right;
   }
-  header a {
+  header a.contactbtn {
     display: none !important;
   }
 }
