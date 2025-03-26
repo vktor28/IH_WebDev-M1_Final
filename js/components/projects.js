@@ -16,7 +16,7 @@ async function getProjects() {
               <div class="cardBody">
                 <h6 class="text-medium mb-1">${project.name}</h6>
                 <p class="headline-regular mb-4">${project.description}</p>
-                <a href="#">Learn more</a>
+                <a href="/pages/project.html?id=${project.uuid}">Learn more</a>
               </div>`;
       projectCards.appendChild(card);
     });
@@ -25,5 +25,4 @@ async function getProjects() {
     console.log("Something went wrong!", err);
   }
 }
-
 getProjects();

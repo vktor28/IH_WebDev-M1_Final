@@ -1,0 +1,124 @@
+:root {
+  --color-primary-default: #072ac8;
+  --color-primary-accent: #43d2ff;
+  --color-primary-hover: #a2d6f9;
+  --color-primary-tapped: #d1edff;
+  --color-neutral-dark: #292e47;
+  --color-neutral-medium: #6b708d;
+  --color-neutral-light: #f2f4fc;
+  --color-neutral-light-blue: #ecf7ff;
+  --color-yellow: #ffc600;
+}
+.nav-bar a {color: var(--color-neutral-medium);}
+.nav-toggle {
+  display: none;
+}
+
+/* Estilo básico del label (hamburguesa) */
+.nav {
+  z-index: 100;
+}
+
+.nav-toggle-label {
+  display: none; /* Por defecto, oculto en pantallas grandes */
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+
+/* Las tres líneas del icono */
+.nav-toggle-label span {
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: var(--transition-normal);
+}
+
+/* Líneas en su posición inicial */
+.nav-toggle-label span:nth-child(1) {
+  top: 0.4rem;
+}
+.nav-toggle-label span:nth-child(2) {
+  top: 0.9rem;
+}
+.nav-toggle-label span:nth-child(3) {
+  top: 1.4rem;
+}
+
+@media (max-width: 760px) {
+  .nav-toggle-label {
+    display: block;
+    margin-left: auto; /* empuja el menú hamburguesa a la derecha */
+  }
+  .nav-bar {
+    display: flex;
+  flex-direction: column;
+  background-color: var(--color-neutral-dark);
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  right: -250px;
+  height: 100vh;
+  width: 250px;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: right 1s ease;
+  justify-content: flex-start;
+  z-index: 1001;
+  margin-top: 70px;
+  }
+  .nav-bar.active {
+    display: flex;
+    justify-content: flex-start;
+    right: 0;
+  }
+  .nav-bar ul {
+    display: inline;
+  }
+  .nav-bar ul li {
+    padding: 20px;
+  }
+  /* Cuando se activa (checked) el input, mostramos la nav */
+  #nav-toggle:checked + .nav-toggle-label + .nav {
+    display: block;
+  }
+  /* Ajuste del UL en modo vertical */
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* Centrado del texto a la derecha */
+  .nav li a {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+  }
+  header a {
+    display: none !important;
+  }
+}
+
+/* 
+      En pantallas más grandes, 
+      mostramos el nav normalmente y ocultamos el label
+    */
+@media (min-width: 761px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  .nav {
+    display: flex; /* el nav se ve siempre en desktop */
+    position: static;
+    width: auto;
+    padding: 0;
+    border-top: none;
+  }
+  .nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+}
