@@ -1,9 +1,9 @@
 document.querySelector("footer").innerHTML = `<div class="container">
-        <div class="company">
+        <div class="company mt-2">
           <img class="mb-2" src="/assets/logos/circle.svg" />
           <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
         </div>
-        <div class="links grid-container">
+        <div class="links grid-container mt-2">
           <a class="item headline-regular" href="#">Team</a>
           <a class="item headline-regular" href="#">Services</a>
           <a class="item headline-regular" href="#">About</a>

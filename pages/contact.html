@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
   </head>
   <body>
     <header></header>
     <main>
-      <section id="contactForm">
+      <section id="contactForm" class="mt-8">
         <div class="container">
           <h1>Contact Us</h1>
           <form>
-            <div class="formline">
+            <div class="formline mb-4">
               <label>Full Name</label>
               <input
                 name="name"
@@ -21,9 +22,9 @@
                 placeholder="Enter your full name"
               />
             </div>
-            <div class="formline">
-              <div class="formline_x2">
-                <label>E-mail</label>
+            <div class="formline_x2 mb-4">
+              <div class="formline">
+                <label class="pb-2">E-mail</label>
                 <input
                   name="email"
                   type="email"
@@ -31,7 +32,7 @@
                   required
                 />
               </div>
-              <div class="formline_x2">
+              <div class="formline">
                 <label>Phone</label>
                 <input
                   name="phone"
@@ -41,10 +42,10 @@
                 />
               </div>
             </div>
-            <div class="formline">
+            <div class="formline mb-4">
               <label>Message</label>
               <textarea
-                rows="5"
+                rows="10"
                 placeholder="Write your message here ...."
                 required
               ></textarea>
@@ -56,9 +57,9 @@
         </div>
       </section>
     </main>
-    <footer></footer>
-    <script src="./js/components/header.js"></script>
-    <script src="./js/components/footer.js"></script>
-    <script src="./js/menu.js"></script>
+    <footer class="mt-12 mb-12"></footer>
+    <script src="../js/components/header.js"></script>
+    <script src="../js/components/footer.js"></script>
+    <script src="../js/menu.js"></script>
   </body>
 </html>
