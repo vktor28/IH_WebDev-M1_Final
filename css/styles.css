@@ -413,7 +413,7 @@ footer .container {
   justify-content: space-between;
   align-items: center;
 }
-input,
+#contactForm input,
 textarea {
   padding: 1.8rem 66px;
   width: 100%;
