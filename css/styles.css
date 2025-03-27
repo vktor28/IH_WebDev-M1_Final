@@ -414,7 +414,7 @@ footer .container {
   align-items: center;
 }
 #contactForm input,
-textarea {
+#contactForm textarea {
   padding: 1.8rem 66px;
   width: 100%;
   color: var(--color-neutral-dark);
