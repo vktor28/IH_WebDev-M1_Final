@@ -119,6 +119,9 @@ a {
   text-decoration: none;
   color: var(--color-primary-default);
 }
+a.btn:hover {
+background-color: var(--color-neutral-dark);
+}
 .btn {
   padding: 15px 30px;
   border: 0px;
@@ -224,9 +227,11 @@ a {
 }
 .logo-customer {
   filter: grayscale(1);
+  transition: transform 0.3s ease;
 }
 .logo-customer:hover {
   filter: none !important;
+  transform: scale(1.2);
 }
 .cards {
   display: flex;
@@ -243,11 +248,11 @@ a {
   min-width: 300px;
   background-color: white;
 }
-.card {transition: transform 0.3s ease;}
+.card {
+  transition: transform 0.3s ease;
+}
 .card:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 .cardImg {
   height: 200px;
