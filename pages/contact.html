@@ -13,7 +13,12 @@
       <section id="contactForm" class="mt-8">
         <div class="container">
           <h1>Contact Us</h1>
-          <form>
+          <form
+            name="contactform"
+            action="/thankyou"
+            onsubmit="return validateForm()"
+            method="post"
+          >
             <div class="formline mb-4">
               <label>Full Name</label>
               <input
@@ -65,5 +70,6 @@
     <script src="../js/components/header.js"></script>
     <script src="../js/components/footer.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/formvalidation.js"></script>
   </body>
 </html>
