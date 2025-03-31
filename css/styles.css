@@ -110,6 +110,11 @@ header {
   max-width: 1200px;
   padding: 0px 15px;
 }
+.contentxl {
+  margin: auto;
+  max-width: 1400px;
+  padding: 0px 15px;
+}
 a {
   text-decoration: none;
   color: var(--color-primary-default);
@@ -183,6 +188,9 @@ a {
   margin: 50px auto;
   flex-wrap: wrap;
 }
+.hidden {
+  display: none;
+}
 .d-right {
   max-width: 50%;
   position: relative;
@@ -216,6 +224,9 @@ a {
 }
 .logo-customer {
   filter: grayscale(1);
+}
+.logo-customer:hover {
+  filter: none !important;
 }
 .cards {
   display: flex;

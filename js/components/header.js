@@ -1,4 +1,4 @@
-document.querySelector("header").innerHTML = `
+document.querySelector("header#header").innerHTML = `
 <img href="/" src="/assets/logos/circle.svg" class="logo" />
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>

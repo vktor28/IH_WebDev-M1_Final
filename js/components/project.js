@@ -1,6 +1,5 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-console.log(id);
 async function getProject() {
   try {
     const response = await fetch(
@@ -36,7 +35,6 @@ async function getProjects() {
     );
     const jsonResponse = await response.json();
     const jsonFiltered = jsonResponse.filter((project) => project.uuid !== id);
-    console.log(jsonFiltered);
 
     const projectCards = document.querySelector("#projects .cards");
     jsonFiltered.forEach((project) => {
@@ -54,6 +52,7 @@ async function getProjects() {
     });
   } catch (err) {
     // Handle error or a rejected Promise
+    projectCards = document.querySelector("#projects .cards");
     console.log("Ouucch... we have some problems. Try again later.", err);
   }
 }

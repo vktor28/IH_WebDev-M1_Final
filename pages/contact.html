@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="../css/menu.css" />
   </head>
   <body>
-    <header></header>
+    <header id="header"></header>
     <main>
       <section id="contactForm" class="mt-8">
         <div class="container">
           <h1>Contact Us</h1>
           <form
             name="contactform"
-            action="/thankyou"
+            action="#"
             onsubmit="return validateForm()"
             method="post"
           >
@@ -63,10 +63,13 @@
               Submit
             </button>
           </form>
+          <div id="succes-message" class="hidden">
+            <h3>You message has been sent</h3>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="mt-12 mb-12"></footer>
+    <footer id="footer" class="mt-12 mb-12"></footer>
     <script src="../js/components/header.js"></script>
     <script src="../js/components/footer.js"></script>
     <script src="../js/menu.js"></script>

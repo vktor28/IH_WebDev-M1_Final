@@ -1,4 +1,4 @@
-document.querySelector("footer").innerHTML = `<div class="container">
+document.querySelector("footer#footer").innerHTML = `<div class="container">
         <div class="company mt-2">
           <img class="mb-2" src="/assets/logos/circle.svg" />
           <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>

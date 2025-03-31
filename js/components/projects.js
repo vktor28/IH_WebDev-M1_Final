@@ -4,7 +4,6 @@ async function getProjects() {
       "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
     );
     const jsonResponse = await response.json();
-    console.log(jsonResponse);
 
     const projectCards = document.querySelector("#projects .cards");
     jsonResponse.slice(1, 4).forEach((project) => {
