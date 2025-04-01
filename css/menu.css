@@ -9,7 +9,9 @@
   --color-neutral-light-blue: #ecf7ff;
   --color-yellow: #ffc600;
 }
-.nav-bar a {color: var(--color-neutral-medium);}
+.nav-bar a {
+  color: var(--color-neutral-medium);
+}
 .nav-toggle {
   display: none;
 }
@@ -25,6 +27,7 @@
   width: 2rem;
   height: 2rem;
   position: relative;
+  z-index: 999999;
 }
 
 /* Las tres líneas del icono */
@@ -36,6 +39,9 @@
   position: absolute;
   left: 0;
   transition: var(--transition-normal);
+}
+.nav-toggle-label.active span {
+  background-color: white;
 }
 
 /* Líneas en su posición inicial */
@@ -50,27 +56,29 @@
 }
 
 @media (max-width: 760px) {
-  .nav-bar a {color: var(--color-neutral-light);}
+  .nav-bar a {
+    color: var(--color-neutral-light);
+  }
   .nav-toggle-label {
     display: block;
     margin-left: auto; /* empuja el menú hamburguesa a la derecha */
   }
   .nav-bar {
     display: flex;
-  flex-direction: column;
-  background-color: var(--color-neutral-dark);
-  position: fixed;
-  overflow-x: hidden;
-  top: 0;
-  right: -250px;
-  height: 100vh;
-  width: 250px;
-  padding: 2rem 1rem;
-  text-align: center;
-  transition: right 1s ease;
-  justify-content: flex-start;
-  z-index: 1001;
-  margin-top: 70px;
+    flex-direction: column;
+    background-color: var(--color-neutral-dark);
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: right 1s ease;
+    justify-content: flex-start;
+    z-index: 1001;
+    margin-top: 0px;
   }
   .nav-bar.active {
     display: flex;
