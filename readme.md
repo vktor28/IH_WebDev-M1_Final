@@ -47,10 +47,10 @@ A responsive landing page built as the final project for the Web Development Mod
 └── menu.js
 └── formvalidation.js
 └── components/
-└── header.js
-└── footer.js
-└── project.js
-└── projects.js
+    └── header.js
+    └── footer.js
+    └── project.js
+    └── projects.js
 
 /pages
 └── project.html
