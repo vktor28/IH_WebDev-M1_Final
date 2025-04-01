@@ -1,4 +1,4 @@
-# Ironhack Project – Víctor Juárez
+# Ironhack Final Project M1 – Víctor Juárez
 
 (https://spiffy-licorice-aa8143.netlify.app/)
 
@@ -9,8 +9,8 @@ A responsive landing page built as the final project for the Web Development Mod
 ## Technologies
 
 - HTML5
-- CSS3
-- JavaScript (Vanilla)
+- CSS
+- JavaScript
 - Hosting via Netlify
 
 ## Site Structure & Features

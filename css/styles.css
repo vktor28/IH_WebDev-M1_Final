@@ -93,6 +93,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.nav-bar ul li a:hover {
+  color: var(--color-primary-default);
+}
 .logo {
   margin: 0;
 }
@@ -120,7 +123,7 @@ a {
   color: var(--color-primary-default);
 }
 a.btn:hover {
-background-color: var(--color-neutral-dark);
+  background-color: var(--color-neutral-dark);
 }
 .btn {
   padding: 15px 30px;
@@ -462,8 +465,12 @@ footer .container {
 #contactForm textarea {
   padding: 1.8rem 20px;
 }
-#succes-message {margin-top: 40px;}
-#succes-message h3 {color: var(--color-primary-default);}
+#succes-message {
+  margin-top: 40px;
+}
+#succes-message h3 {
+  color: var(--color-primary-default);
+}
 @media (max-width: 496px) {
   .d-right {
     max-width: 100% !important;

@@ -1,5 +1,5 @@
 document.querySelector("header#header").innerHTML = `
-<img href="/" src="/assets/logos/circle.svg" class="logo" />
+<a href="/"><img href="/" src="/assets/logos/circle.svg" class="logo" /></a>
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
         <span></span>
