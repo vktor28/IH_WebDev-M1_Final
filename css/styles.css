@@ -520,6 +520,7 @@ footer .container {
     flex-wrap: wrap;
   }
 }
+#project .description {text-align: justify;}
 @media (min-width: 497px) and (max-width: 761px) {
   .d-right {
     max-width: 100% !important;

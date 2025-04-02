@@ -16,13 +16,12 @@
   display: none;
 }
 
-/* Estilo básico del label (hamburguesa) */
 .nav {
   z-index: 100;
 }
 
 .nav-toggle-label {
-  display: none; /* Por defecto, oculto en pantallas grandes */
+  display: none; 
   cursor: pointer;
   width: 2rem;
   height: 2rem;
@@ -30,7 +29,7 @@
   z-index: 999999;
 }
 
-/* Las tres líneas del icono */
+
 .nav-toggle-label span {
   background-color: black;
   height: 2px;
@@ -44,7 +43,6 @@
   background-color: white;
 }
 
-/* Líneas en su posición inicial */
 .nav-toggle-label span:nth-child(1) {
   top: 0.4rem;
 }
@@ -61,7 +59,7 @@
   }
   .nav-toggle-label {
     display: block;
-    margin-left: auto; /* empuja el menú hamburguesa a la derecha */
+    margin-left: auto;
   }
   .nav-bar {
     display: flex;
@@ -79,6 +77,7 @@
     justify-content: flex-start;
     z-index: 1001;
     margin-top: 0px;
+    padding-top: 80px;
   }
   .nav-bar.active {
     display: flex;
@@ -91,16 +90,13 @@
   .nav-bar ul li {
     padding: 20px;
   }
-  /* Cuando se activa (checked) el input, mostramos la nav */
   #nav-toggle:checked + .nav-toggle-label + .nav {
     display: block;
   }
-  /* Ajuste del UL en modo vertical */
   .nav ul {
     flex-direction: column;
     gap: 1rem;
   }
-  /* Centrado del texto a la derecha */
   .nav li a {
     width: 100%;
     display: inline-block;
@@ -111,16 +107,12 @@
   }
 }
 
-/* 
-      En pantallas más grandes, 
-      mostramos el nav normalmente y ocultamos el label
-    */
 @media (min-width: 761px) {
   .nav-toggle-label {
     display: none;
   }
   .nav {
-    display: flex; /* el nav se ve siempre en desktop */
+    display: flex;
     position: static;
     width: auto;
     padding: 0;
