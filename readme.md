@@ -9,7 +9,7 @@ A responsive landing page built as the final project for the Web Development Mod
 ## Technologies
 
 - HTML5
-- CSS
+- CSS3
 - JavaScript
 - Hosting via Netlify
 
@@ -22,18 +22,33 @@ A responsive landing page built as the final project for the Web Development Mod
 - Display of past projects (data fetched via API).
 - Customer testimonials.
 - Description of services offered.
+- Home Burguer
+
+#### Features
+
+- Responsive menu (burger menu)
+- CSS efects on logos, and cards
+- Data project dynamically fetched from an external API.
 
 ### Project Page
 
 - Detailed view of an individual project.
-- Data is dynamically fetched from an external API.
+
+#### Features
+
+- Responsive menu (burger menu)
+- Individual projects & all Data projects dynamically fetched from an external API.
 
 ### Contact Page
 
 - A contact form for reaching out to the company.
+
+#### Features
+
 - Form validation is handled via HTML and JavaScript:
   - All fields are required.
   - The name field cannot contain the word "ironhack".
+  - After Ok submit, success message.
 
 ## Structure
 
@@ -47,10 +62,10 @@ A responsive landing page built as the final project for the Web Development Mod
 └── menu.js
 └── formvalidation.js
 └── components/
-    └── header.js
-    └── footer.js
-    └── project.js
-    └── projects.js
+└── header.js
+└── footer.js
+└── project.js
+└── projects.js
 
 /pages
 └── project.html
